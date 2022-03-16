@@ -30,7 +30,7 @@
   }
   
   main {
-    background: url("bg.jpg") no-repeat center center;
+    background-color: rgb(144, 247, 247);
     background-size: cover;
     height: 92vh;
   }
