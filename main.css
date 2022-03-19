@@ -131,9 +131,10 @@ aside > h2 {
     border-radius: 10px 10px 0px 0px;
 }
 footer {
-    font-size: 0.5m;
+    padding: 2px;
+    font-size: 0.5em;
     text-align: center;
     background-color: var(--cor3);
     color: white;
-    font-family: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
