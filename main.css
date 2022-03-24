@@ -4,11 +4,11 @@
     margin: 0px;
 }
 :root {
-    --cor0: #75f1ef75;
-    --cor1: #069e9cb9;
-    --cor2: #008f8C;
-    --cor3: #015958;
-    --cor4: #023535;
+    --cor0: #c3f0f5;
+    --cor1: #1aa0ee;
+    --cor2: #247BA0;
+    --cor3: #006494;
+    --cor4: #13293D;
     --cor5: black;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Arial, bold ;
@@ -19,25 +19,27 @@ body {
 }
 header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
-    padding: 30px;
+    padding: 10px;
     text-align: center;
-    min-width: 150px;
+   
 }
 header > h1 {
-    font-size: 2.5em;
+    font-style: italic;
+    font-size: 2.4em;
     color: white;
     font-family: var(--fonte-padrao);
-    margin-bottom: 10px;
     text-shadow: 2px 2px 2px black;
 }
 header > p {
+    text-align: right;
     font-size: 1.5em;
     font-family: var(--fonte-padrao);
     color: white;
     text-shadow: 2px 2px 2px black;
 }
-nav { padding: 10px;
-    text-align: right;
+nav { 
+    padding: 5px;
+    text-align: left;
     background-color: var(--cor3);
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
 }
@@ -52,6 +54,10 @@ nav > a:hover {
     background-color: var(--cor4);
     border-radius: 10px;
 }
+nav p {
+    font-style: italic;
+    text-align: right;
+}
 main {
     margin: auto;
     min-width: 280px;
@@ -64,13 +70,8 @@ main {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-iframe {
-    border-radius: 10px;
-    width: 100%;
-    margin: auto;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-}
 main h1 {
+    font-size: 2em;
     margin-top: 10px;
     text-align: center;
 }
@@ -130,11 +131,18 @@ aside > h2 {
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
 }
+iframe {
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
 footer {
     padding: 2px;
-    font-size: 0.5em;
+    font-size: 0.8em;
     text-align: center;
     background-color: var(--cor3);
-    color: white;
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
