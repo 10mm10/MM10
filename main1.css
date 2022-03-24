@@ -1,121 +1,153 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
 }
-
-/* Elementos com o ID "titulo" */
-#titulo {
-    font-family: sans-serif;
-    color: #380B61;
-    margin-left: 7%;
-} 
-
-/* Elementos com o ID "subtitulo" */
-#subtitulo {
-    font-family: sans-serif;
-    color: #380B61;
-    margin-left: 10%;
-} 
-
-#check{
-    display: inline-block;
+:root {
+    --cor0: #c3f0f5;
+    --cor1: #1aa0ee;
+    --cor2: #247BA0;
+    --cor3: #006494;
+    --cor4: #13293D;
+    --cor5: black;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: Arial, bold ;
 }
-
-/* Elementos de tag <fieldset>*/
-fieldset {
-    border: 0;
+body {
+    margin: auto;
+    background-color: var(--cor0);
 }
-
-/* Elemento de tag <body> */
-body{
-    background-color: #F0F8FF;
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #59429d;
-    margin-left: 36%;
-    margin-top: 2%;
-    justify-content: center;
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 10px;
+    text-align: center;
+   
 }
-
-/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
-input, select, textarea, button {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #59429d;
-    border-radius: 5px;
+header > h1 {
+    font-style: italic;
+    font-size: 2.4em;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-shadow: 2px 2px 2px black;
 }
-
-/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
-.grupo:before, .grupo:after {
-    display: table;
+header > p {
+    text-align: right;
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
-
-/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
-.grupo:after {
-    clear: both;
+nav { 
+    padding: 5px;
+    text-align: left;
+    background-color:var(--cor3);
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
 }
-
-/* Elementos de classe "campo" */
-.campo {
-    margin-bottom: 1em;
+nav > a {
+    margin-left: 20px;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+    color: white;
 }
-
-/* Elementos de classe "campo" de tag <label> */
-.campo label {
-    margin-bottom: 0.2em;
-    color: #59429d;
-    display: block;
+nav > a:hover {
+    background-color: var(--cor1);
+    border-radius: 15px;
 }
-
-/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
-fieldset.grupo .campo {
-    float:  left;
-    margin-right: 1em;
+nav p {
+    font-style: italic;
+    text-align: right;
 }
-
-/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
-.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
-    padding: 0.2em;
-    border: 1px solid #59429d;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: block;
+main {
+    margin: auto;
+    min-width: 280px;
+    max-width: 980px;
+    padding: 10px;
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-
-/* Elementos de classe "campo" de tag <select> e <option>*/
-.campo select option {
-    padding-right: 1em;
+main h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 3.5em;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-shadow: 2px 2px 2px black;
 }
-
-/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: #E0E0F8;
+.titulo {
+    margin: auto;
+    padding: 15px 0px 0px 5px;
+    font-size: 1.5em;
 }
-
-/* Elemento de classe "botao" */
-.botao {
-    font-size: 1.2em;
-    background: #59429d;
-    border: 0;
-    margin-bottom: 1em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+.titulo1 {
+    padding: 15px 0px 0px 5px;
+    font-size: 1.5em;
 }
-
-/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
-.botao:hover {
-    background: #CCBBFF;
-    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
-    text-shadow: none;
+.titulo2 {
+    padding: 15px 0px 0px 5px;
+    font-size: 1.5em;
 }
-
-/* Elementos de classe botão e de tag <select> */
-.botao, select{
+div.button {
+    padding: 50px;
+}
+.input1 {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+}
+.input2 {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+}
+.input3 {
+    width: 600px;
+    height: 100px;
+    padding: 5px;
+}
+footer {
+    padding: 2px;
+    font-size: 0.8em;
+    text-align: center;
+    background-color: var(--cor3);
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media(max-width:600px){
+    nav a {
+        text-align: center;
+        display: block;
+    }
+}
+.btn-whatsapp {
+    position: fixed;
+    
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
+    background: #34af23;
+    color: #FFF;
+    font-size: 1.5em;
+    border: 1px solid #f1f1f1;
+    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+a {
+    color: inherit;
+}
+@keyframes pulsar {
+    0% {
+        height: 40px;
+        width: 40px;
+    }
+    100% {
+        height: 50px;
+        width: 50px;
+    }
 }
