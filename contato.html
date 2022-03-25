@@ -10,11 +10,6 @@
   <title>MM10.Sistemas</title>
 </head>
 <body>
-  <button class="btn-whatsapp">
-    <a href="https://api.whatsapp.com/send?phone=5541997618970&text=Olá%2C%20tudo bem?" target="_blank">
-        <i class="fa fa-whatsapp"></i>
-    </a>
-  </button>
       <header>
         <h1>MM10.Sistemas</MM10></h1>
       </header>
@@ -25,14 +20,33 @@
           <p>Moisés Pimentel.</p>
         </nav>
     <main>
-        <form method="post" id="contato" action="mailto:segmm10@gmail.com">
-            <h1>Contato</h1>
+      <div class="container">
+        <form id="contact" action="" method="post">
+          <h1>Contato</h1>
+          <fieldset>
+            <input placeholder="Seu nome" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Seu e-mail" type="text" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Seu telefone(opcional)" type="text" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Seu site(opcional)" type="text" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Digite sua mensagem aqui..." type="text" tabindex="3" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Cadastrar</button>
+          </fieldset>
         </form>
+      </div>
     </main>
-    <div class="voltar">
-        <a href="index.html"><img src="img/voltar.png" alt="Voltar"></a>
-    </div>
-
+      <button class="voltar">
+        <a href="index.html">Voltar</a>
+      </button>
   <footer>
     <p>
       Site criado por MM10.Sistemas
@@ -40,6 +54,10 @@
         <i class="fa fa-whatsapp"></i>
     </p>
   </footer>
+  <button class="btn-whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=5541997618970&text=Olá%2C%20tudo bem?" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
 </body>
 </html>
 
