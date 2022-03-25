@@ -139,10 +139,10 @@ iframe {
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 footer {
-    padding: 2px;
+    padding: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
