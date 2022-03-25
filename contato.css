@@ -58,6 +58,7 @@ nav > a:hover {
     border-radius: 15px;
 }
 nav p {
+    color: var(--cor4);
     font-style: italic;
     text-align: right;
 }
@@ -80,79 +81,89 @@ main h1 {
     font-family: var(--fonte-padrao);
     text-shadow: 2px 2px 2px black;
 }
-.container {
+.form h1 {
+    margin: auto;
+}
+.form {
     margin: auto;
     max-width: 800px;
-    position: relative;
-}
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"]{
-    font:400 12px/16px "Roboto", helvetica, Arial, sans-serif;
-}
-#contact {
-    margin: auto;
-    margin-left: 0px;
-    background: var(--cor2);
-    padding: 30px 60px 90px 60px;
-    border-radius: 0 0 10px 10px;
-}
-fieldset {
-    border: medium none !important;
-    min-width: 100%;
-    padding: 10px 10px 10px 10px;
+    background: var(--cor3);
+    border-radius:0 0 10px 10px;
+  }
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: block;
     width: 100%;
-}
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea {
+  }
+  
+  .form label {
     margin: auto;
-    width: 93%;
-    background: var(--cor0);
-    padding: 10px;
-    border-radius: 10px;
-}
-#contact input[type="text"]:hover,
-#contact input[type="email"]:hover,
-#contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
-#contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    background: white;
-}
-#contact button[type="submit"] {
-    cursor: pointer;
-    width: 96%;
-    border-radius: 10px;
-    background:var(--cor2);
+    font-size: 1.5em;
     color: white;
-    margin: 10px 10px 10px 0;
-    padding: 20px;
-    font-size: 15px;
-}
-#contact button[type="submit"]:hover {
-    background: var(--cor1);
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-}
-#contact button[type="submit"]:active {
-    box-shadow: inset black;
-}
-#contact input:focus,
-#contact textarea:focus{
-    outline: 0;
-    border: 1px solid black;
-}
-
-footer {
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  .form input  {
+    margin: auto;
+    max-width: 50%;
+    font: inherit;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+    margin-bottom: 40px;
+  }
+  
+  .form textarea {
+    transition: border-color, box-shadow 0.2s;
+    margin: auto;
+    height: 100px;
+    max-width: 80%;
+    font: inherit;
+    resize: vertical;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-top: 1px;
+    
+  }
+  
+  .form input:hover,
+  .form input:focus,
+  .form textarea:hover,
+  .form textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+  }
+  
+  .form button {
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 1em;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: solid #13293D;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+  }
+  
+  .form button:hover,
+  .form button:focus {
+    outline: none;
+    background: #09d;
+  }
+  footer {
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
