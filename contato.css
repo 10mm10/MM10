@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googlespis.com/css?famyly=Roboto:400,300,600,400italic);
 * {
     padding: 0px;
     margin: 0px;
@@ -6,7 +7,7 @@
 :root {
     --cor0: #c3f0f5;
     --cor1: #1aa0ee;
-    --cor2: #247BA0;
+    --cor2: #247ba09c;
     --cor3: #006494;
     --cor4: #13293D;
     --cor5: black;
@@ -21,7 +22,6 @@ header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     padding: 10px;
     text-align: center;
-   
 }
 header > h1 {
     font-style: italic;
@@ -42,9 +42,11 @@ nav {
     text-align: left;
     background-color:var(--cor3);
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
+    margin-bottom: 0px;
+    border-bottom: 0px;
 }
 nav > a {
-    margin-left: 20px;
+    margin-left: 10px;
     transition-duration: 0.2s;
     text-decoration: none;
     padding: 10px;
@@ -56,6 +58,7 @@ nav > a:hover {
     border-radius: 15px;
 }
 nav p {
+    color: var(--cor4);
     font-style: italic;
     text-align: right;
 }
@@ -63,7 +66,7 @@ main {
     margin: auto;
     min-width: 280px;
     max-width: 980px;
-    padding: 10px;
+    padding: 0 10px 120px 10px;
     background-color: var(--cor0);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
     margin-bottom: 10px;
@@ -71,74 +74,92 @@ main {
     border-bottom-right-radius: 10px;
 }
 main h1 {
-    font-size: 2em;
-    margin-top: 10px;
-    text-align: center;
-}
-main h2{
-    text-align: center;
-}
-main h3 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-main p {
-    color: black;
-    text-align: justify;
-    font-family: var(--fonte-padrao);
-    text-indent: 20px;
-    line-height: 1.4em;
-    margin-top: 10px;
-}
-main img {
-    margin-top: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-strong {
-    font-size: 1.1em;
-    text-decoration: #023535;
-    font-weight: bold;
-}
-main a {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #023535;
-}
-aside {
-    margin-top: 15px;
     padding: 10px;
-    background-color:var(--cor1);
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-aside ul {
-    margin-top: 15px;
-    list-style-type: '\2714\00A0\00A0';
-    columns: 2;
-    list-style-position: inside;
-}
-aside > h2 {
-    background-color: var(--cor3);
-    text-shadow: 2px 2px 2px black;
-    padding: 5px;
-    text-align: center;
     color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 3.3em;
     font-family: var(--fonte-padrao);
-    margin: -10px -10px 0px -10px;
-    border-radius: 10px 10px 0px 0px;
+    text-shadow: 2px 2px 2px black;
 }
-iframe {
-    align-items: center;
-    border-radius: 10px;
+.form {
+    margin: left;
+    max-width: 350px;
+    background: var(--cor3);
+    border-radius:0 0 10px 10px;
+  }
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: block;
     width: 100%;
+  }
+  
+  .form label {
+    margin-left: 10px;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  .form input  {
+    margin-left: 10px;
+    max-width: 84%;
+    font: inherit;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+    margin-bottom: 40px;
+  }
+  
+  .form textarea {
+    margin-left: 10px;
+    height: 70px;
+    max-width: 90%;
+    font: inherit;
+    resize: vertical;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    margin-top: 1px;
+    transition: border-color, box-shadow 0.2s;
+    
+  }
+  
+  .form input:hover,
+  .form input:focus,
+  .form textarea:hover,
+  .form textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+  }
+  
+  .form button {
+    width: 50%;
     margin: auto;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0);
-}
-footer {
+    display: block;
+    padding: 0.2em;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: solid #13293D;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.5em;
+  }
+  
+  .form button:hover,
+  .form button:focus {
+    outline: none;
+    background: #09d;
+  }
+  footer {
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
@@ -154,7 +175,6 @@ footer {
 }
 .btn-whatsapp {
     position: fixed;
-    
     bottom: 5px;
     right: 5px;
     border-radius: 50%;
@@ -166,6 +186,18 @@ footer {
     font-size: 1.5em;
     border: 1px solid #f1f1f1;
     animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+.voltar{
+    margin: 0 0 0 10px;
+    padding: 5px;
+    text-decoration: none;
+    width: 100px;
+    border-radius: 10px;
+    background-color: var(--cor2);
+    font-style: italic;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    
 }
 a {
     color: inherit;
