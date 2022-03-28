@@ -13,34 +13,52 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Arial, bold ;
 }
+body, html {
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+}
 body {
-    margin: auto;
-    background: var(--cor0);
+    display: flex;
+    flex-direction: column;
 }
 header {
-    margin: auto;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     padding: 10px;
-    max-width: 980px;
+    text-align: center;
+   
 }
 header > h1 {
-    text-align: center;
-    margin: auto;
-    font-style: italic;
-    font-size: 3em;
-    color: white;
-    font-family: var(--fonte-padrao);
-    text-shadow: 2px 2px 2px black;
-}
-header h2 {
-    text-align: center;
-    margin: auto;
-    margin: 20px ;
     font-style: italic;
     font-size: 2.4em;
     color: white;
     font-family: var(--fonte-padrao);
     text-shadow: 2px 2px 2px black;
+}
+header > p {
+    text-align: right;
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.conteudo {
+    margin-top: 100px;
+    text-align: center;
+    font-style: italic;
+    font-size: 2.4em;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-shadow: 2px 2px 2px black;
+    flex: 1 0 auto;
+}
+.conteudo h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-shadow: 2px 2px 2px black;
+    flex: 1 0 auto;
 }
 .voltar{
     margin: 0 0 0 10px;
@@ -55,10 +73,11 @@ header h2 {
     
 }
 footer {
+    flex-shrink: 0;
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
