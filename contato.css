@@ -74,19 +74,17 @@ main {
     border-bottom-right-radius: 10px;
 }
 main h1 {
+    padding: 10px;
     color: white;
     text-align: center;
     font-style: italic;
-    font-size: 3.5em;
+    font-size: 3.3em;
     font-family: var(--fonte-padrao);
     text-shadow: 2px 2px 2px black;
 }
-.form h1 {
-    margin: auto;
-}
 .form {
-    margin: auto;
-    max-width: 800px;
+    margin: left;
+    max-width: 350px;
     background: var(--cor3);
     border-radius:0 0 10px 10px;
   }
@@ -100,17 +98,16 @@ main h1 {
   }
   
   .form label {
-    margin: auto;
-    font-size: 1.5em;
+    margin-left: 10px;
+    font-size: 1em;
     color: white;
-    text-align: center;
     margin-bottom: 5px;
     text-shadow: 2px 2px 2px black;
   }
   
   .form input  {
-    margin: auto;
-    max-width: 50%;
+    margin-left: 10px;
+    max-width: 84%;
     font: inherit;
     padding: 10px;
     border: 1px solid transparent;
@@ -120,15 +117,15 @@ main h1 {
   }
   
   .form textarea {
-    transition: border-color, box-shadow 0.2s;
-    margin: auto;
-    height: 100px;
-    max-width: 80%;
+    margin-left: 10px;
+    height: 70px;
+    max-width: 90%;
     font: inherit;
     resize: vertical;
     border-radius: 8px;
     margin-bottom: 50px;
     margin-top: 1px;
+    transition: border-color, box-shadow 0.2s;
     
   }
   
@@ -145,7 +142,7 @@ main h1 {
     width: 50%;
     margin: auto;
     display: block;
-    padding: 1em;
+    padding: 0.2em;
     background: #0072c4;
     color: #fff;
     font: inherit;
@@ -154,7 +151,6 @@ main h1 {
     border-radius: 8px 8px 0 0;
     cursor: pointer;
     transition: 0.2s;
-    margin-bottom: 50px;
     font-size: 1.5em;
   }
   
