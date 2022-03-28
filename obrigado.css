@@ -62,3 +62,6 @@ footer {
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
+button a {
+    color: white;
+}

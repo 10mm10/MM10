@@ -212,3 +212,6 @@ a {
         width: 50px;
     }
 }
+button a {
+    color: white;
+}
