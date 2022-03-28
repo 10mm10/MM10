@@ -43,20 +43,22 @@ header h2 {
     text-shadow: 2px 2px 2px black;
 }
 .voltar{
-    margin: 20px;
+    margin: 0 0 0 10px;
     padding: 5px;
+    text-decoration: none;
     width: 100px;
     border-radius: 10px;
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     font-style: italic;
     font-family: var(--fonte-padrao);
     font-size: 1em;
+    
 }
 footer {
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
