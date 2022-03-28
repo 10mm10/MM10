@@ -4,7 +4,7 @@
     margin: 0px;
 }
 :root {
-    --cor0: #c3f0f5;
+    --cor0: #22dcf141 ;
     --cor1: #1aa0ee;
     --cor2: #247BA0;
     --cor3: #006494;
@@ -40,7 +40,7 @@ header > p {
 nav { 
     padding: 5px;
     text-align: left;
-    background-color:var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
 }
 nav > a {
@@ -142,7 +142,7 @@ footer {
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }

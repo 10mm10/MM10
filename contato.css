@@ -5,7 +5,7 @@
     margin: 0px;
 }
 :root {
-    --cor0: #c3f0f5;
+    --cor0: #06dbf32a;
     --cor1: #1aa0ee;
     --cor2: #247ba09c;
     --cor3: #006494;
@@ -40,7 +40,7 @@ header > p {
 nav { 
     padding: 5px;
     text-align: left;
-    background-color:var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
     margin-bottom: 0px;
     border-bottom: 0px;
@@ -85,7 +85,7 @@ main h1 {
 .form {
     margin: left;
     max-width: 350px;
-    background: var(--cor3);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     border-radius:0 0 10px 10px;
   }
   
@@ -143,7 +143,7 @@ main h1 {
     margin: auto;
     display: block;
     padding: 0.2em;
-    background: #0072c4;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     color: #fff;
     font: inherit;
     text-transform: uppercase;
@@ -163,7 +163,7 @@ main h1 {
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -193,7 +193,7 @@ main h1 {
     text-decoration: none;
     width: 100px;
     border-radius: 10px;
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     font-style: italic;
     font-family: var(--fonte-padrao);
     font-size: 1em;

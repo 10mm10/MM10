@@ -4,7 +4,7 @@
     margin: 0px;
 }
 :root {
-    --cor0: #c3f0f5;
+    --cor0: #22dcf141;
     --cor1: #1aa0ee;
     --cor2: #247ba09c;
     --cor3: #006494;
@@ -15,38 +15,42 @@
 }
 body {
     margin: auto;
-    background-color: var(--cor0);
+    background: var(--cor0);
 }
 header {
+    margin: auto;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     padding: 10px;
-    text-align: center;
+    max-width: 980px;
 }
 header > h1 {
+    text-align: center;
+    margin: auto;
+    font-style: italic;
+    font-size: 3em;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-shadow: 2px 2px 2px black;
+}
+header h2 {
+    text-align: center;
+    margin: auto;
+    margin: 20px ;
     font-style: italic;
     font-size: 2.4em;
     color: white;
     font-family: var(--fonte-padrao);
     text-shadow: 2px 2px 2px black;
 }
-header > p {
-    text-align: right;
-    font-size: 1.5em;
-    font-family: var(--fonte-padrao);
-    color: white;
-    text-shadow: 2px 2px 2px black;
-}
 .voltar{
-    text-align: center;
+    margin: 20px;
     padding: 5px;
-    text-decoration: none;
     width: 100px;
     border-radius: 10px;
     background-color: var(--cor2);
     font-style: italic;
     font-family: var(--fonte-padrao);
     font-size: 1em;
-    
 }
 footer {
     padding: 10px;
