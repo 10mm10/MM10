@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --cor0: #22dcf141;
+    --cor1: #1aa0ee;
+    --cor2: #247ba09c;
+    --cor3: #006494;
+    --cor4: #13293D;
+    --cor5: black;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: Arial, bold ;
+}
+body, html {
+    height: 100%;
+    
+}
+body {
+    background-color:var(--cor1); 
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    padding: 10px;
+    text-align: center;
+}
+header > h1 {
+    font-style: italic;
+    font-size: 2.4em;
+    color: white;
+    font-family: var(--fonte-padrao);
+    text-shadow: 2px 2px 2px black;
+}
+header > p {
+    text-align: right;
+    font-size: 1.5em;
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+nav { 
+    padding: 5px;
+    text-align: left;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+nav > a {
+    margin-left: 10px;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+nav > a:hover {
+    background-color: var(--cor1);
+    border-radius: 15px;
+}
+nav p {
+    color: var(--cor4);
+    font-style: italic;
+    text-align: right;
+}
+.conteudo {
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    flex: 1 0 auto;
+}
+.voltar{
+    margin: 0 0 0 10px;
+    padding: 5px;
+    text-decoration: none;
+    width: 100px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    font-style: italic;
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    
+}
+footer {
+    flex-shrink: 0;
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button a {
+    color: white;
+}
