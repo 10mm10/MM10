@@ -84,8 +84,7 @@ main h1 {
 }
 .form {
     margin: left;
-    max-width: 350px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+  
     border-radius:0 0 10px 10px;
   }
   
@@ -107,7 +106,7 @@ main h1 {
   
   .form input  {
     margin-left: 10px;
-    max-width: 84%;
+    max-width: 25%;
     font: inherit;
     padding: 10px;
     border: 1px solid transparent;
@@ -119,7 +118,7 @@ main h1 {
   .form textarea {
     margin-left: 10px;
     height: 70px;
-    max-width: 90%;
+    max-width: 28%;
     font: inherit;
     resize: vertical;
     border-radius: 8px;
@@ -139,8 +138,7 @@ main h1 {
   }
   
   .form button {
-    width: 50%;
-    margin: auto;
+    width: 15%;
     display: block;
     padding: 0.2em;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
@@ -214,4 +212,8 @@ a {
 }
 button a {
     color: white;
+}
+img {
+    margin-right: 0px;
+    width: 100px;
 }
