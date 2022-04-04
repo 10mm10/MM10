@@ -82,8 +82,8 @@ main h1 {
     font-family: var(--fonte-padrao);
     text-shadow: 2px 2px 2px black;
 }
-.form {
-    
+form {
+    margin: auto;
   }
 .form label,
 .form input,
