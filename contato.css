@@ -5,21 +5,20 @@
     margin: 0px;
 }
 :root {
-    --cor0: #06dbf32a;
-    --cor1: #1aa0ee;
-    --cor2: #247ba09c;
+    --cor0: #CACACA;
+    --cor1: #878787;
+    --cor2: #00BBC9;
     --cor3: #006494;
-    --cor4: #13293D;
-    --cor5: black;
+    --cor4: #00747C;
+    --cor5: #202022;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Arial, bold ;
 }
 body {
     margin: auto;
-    background-color: var(--cor0);
 }
 header {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor0));
     padding: 10px;
     text-align: center;
 }
@@ -40,7 +39,7 @@ header > p {
 nav { 
     padding: 5px;
     text-align: left;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor0));
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
     margin-bottom: 0px;
     border-bottom: 0px;
@@ -51,14 +50,14 @@ nav > a {
     text-decoration: none;
     padding: 10px;
     font-family: var(--fonte-padrao);
-    color: white;
+    color: var(--cor5);
 }
 nav > a:hover {
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     border-radius: 15px;
 }
 nav p {
-    color: var(--cor4);
+    color: var(--cor5);
     font-style: italic;
     text-align: right;
 }
@@ -84,7 +83,7 @@ main h1 {
 .form {
     margin: left;
     max-width: 350px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     border-radius:0 0 10px 10px;
   }
   
@@ -142,7 +141,7 @@ main h1 {
     margin: auto;
     display: block;
     padding: 0.2em;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-color: var(--cor5);
     color: #fff;
     font: inherit;
     text-transform: uppercase;
@@ -156,14 +155,15 @@ main h1 {
   .form button:hover,
   .form button:focus {
     outline: none;
-    background: #09d;
+    background: var(--cor3);
   }
   footer {
-    padding: 10px;
+    height: 150px;
+    padding: 25px;
     font-size: 0.8em;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
-    color:black;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
+    color:var(--cor5);
     font-family: Arial, Helvetica, sans-serif;
 }
 @media(max-width:600px){
@@ -192,7 +192,7 @@ main h1 {
     text-decoration: none;
     width: 100px;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-color: var(--cor5);
     font-style: italic;
     font-family: var(--fonte-padrao);
     font-size: 1em;
