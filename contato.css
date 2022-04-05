@@ -82,18 +82,22 @@ main h1 {
     font-family: var(--fonte-padrao);
     text-shadow: 2px 2px 2px black;
 }
-form {
-    margin: auto;
+.form {
+    margin: left;
+    max-width: 350px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    border-radius:0 0 10px 10px;
   }
-.form label,
-.form input,
-.form textarea,
-.form button {
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
     display: block;
     width: 100%;
   }
   
-.form label {
+  .form label {
     margin-left: 10px;
     font-size: 1em;
     color: white;
@@ -101,9 +105,9 @@ form {
     text-shadow: 2px 2px 2px black;
   }
   
-.form input  {
+  .form input  {
     margin-left: 10px;
-    max-width: 24%;
+    max-width: 84%;
     font: inherit;
     padding: 10px;
     border: 1px solid transparent;
@@ -112,10 +116,10 @@ form {
     margin-bottom: 40px;
   }
   
-.form textarea {
+  .form textarea {
     margin-left: 10px;
     height: 70px;
-    max-width: 27%;
+    max-width: 90%;
     font: inherit;
     resize: vertical;
     border-radius: 8px;
@@ -135,8 +139,8 @@ form {
   }
   
   .form button {
-      margin-left: 80px;
-    width: 12%;
+    width: 50%;
+    margin: auto;
     display: block;
     padding: 0.2em;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
