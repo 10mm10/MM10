@@ -5,20 +5,21 @@
     margin: 0px;
 }
 :root {
-    --cor0: #CACACA;
-    --cor1: #878787;
-    --cor2: #00BBC9;
+    --cor0: #22dcf141 ;
+    --cor1: #1aa0ee;
+    --cor2: #247BA0;
     --cor3: #006494;
-    --cor4: #00747C;
-    --cor5: #202022;
+    --cor4: #13293D;
+    --cor5: black;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Arial, bold ;
 }
 body {
     margin: auto;
+    background-color: var(--cor0);
 }
 header {
-    background-image: linear-gradient(to bottom, var(--cor5), var(--cor0));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
     padding: 10px;
     text-align: center;
 }
@@ -40,7 +41,6 @@ nav {
     padding: 5px;
     text-align: left;
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor0));
-    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
     margin-bottom: 0px;
     border-bottom: 0px;
 }
@@ -66,7 +66,7 @@ main {
     min-width: 280px;
     max-width: 980px;
     padding: 0 10px 120px 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    box-shadow:  2px 2px 2px black(0, 0, 0, 0.534);
     margin-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -162,7 +162,7 @@ main h1 {
     padding: 25px;
     font-size: 0.8em;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     color:var(--cor5);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -187,16 +187,19 @@ main h1 {
     animation: pulsar 0.8s ease-out 1s infinite alternate none running;
 }
 .voltar{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 30px;
     padding: 5px;
     text-decoration: none;
-    width: 100px;
+    width: 5em;
     border-radius: 10px;
-    background-color: var(--cor5);
+    background-color:var(--cor0);
     font-style: italic;
     font-family: var(--fonte-padrao);
     font-size: 1em;
-    
+}
+.voltar:hover{
+    outline: none;
+    background: var(--cor3);
 }
 a {
     color: inherit;
@@ -213,4 +216,7 @@ a {
 }
 button a {
     color: white;
+}
+img {
+    width: 50px;
 }
