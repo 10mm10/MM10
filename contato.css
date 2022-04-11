@@ -5,9 +5,9 @@
     margin: 0px;
 }
 :root {
-    --cor0: #06dbf32a;
+    --cor0: #22dcf141 ;
     --cor1: #1aa0ee;
-    --cor2: #247ba09c;
+    --cor2: #247BA0;
     --cor3: #006494;
     --cor4: #13293D;
     --cor5: black;
@@ -16,12 +16,13 @@
 }
 body {
     margin: auto;
-    background-color: var(--cor0);
+    
 }
 header {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     padding: 10px;
     text-align: center;
+   
 }
 header > h1 {
     font-style: italic;
@@ -40,8 +41,7 @@ header > p {
 nav { 
     padding: 5px;
     text-align: left;
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
-    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.445);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor1));
     margin-bottom: 0px;
     border-bottom: 0px;
 }
@@ -51,14 +51,14 @@ nav > a {
     text-decoration: none;
     padding: 10px;
     font-family: var(--fonte-padrao);
-    color: white;
+    color: var(--cor5);
 }
 nav > a:hover {
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     border-radius: 15px;
 }
 nav p {
-    color: var(--cor4);
+    color: var(--cor5);
     font-style: italic;
     text-align: right;
 }
@@ -67,8 +67,7 @@ main {
     min-width: 280px;
     max-width: 980px;
     padding: 0 10px 120px 10px;
-    background-color: var(--cor0);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    box-shadow:  2px 2px 2px black(0, 0, 0, 0.534);
     margin-bottom: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -83,23 +82,24 @@ main h1 {
     text-shadow: 2px 2px 2px black;
 }
 .form {
-    margin: left;
+    margin: auto;
     max-width: 350px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    margin-bottom: 90px;
+    background-color: var(--cor1);
     border-radius:0 0 10px 10px;
   }
   
-  .form label,
-  .form input,
-  .form textarea,
-  .form button {
+.form label,
+.form input,
+.form textarea,
+.form button {
     display: block;
     width: 100%;
   }
   
   .form label {
     margin-left: 10px;
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
     margin-bottom: 5px;
     text-shadow: 2px 2px 2px black;
@@ -134,7 +134,7 @@ main h1 {
   .form textarea:hover,
   .form textarea:focus {
     outline: none;
-    border-color: #09d;
+    border-color:black;
     box-shadow: 0 0 0 3px #4dc8ff;
   }
   
@@ -143,11 +143,11 @@ main h1 {
     margin: auto;
     display: block;
     padding: 0.2em;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    background-color: var(--cor5);
     color: #fff;
     font: inherit;
     text-transform: uppercase;
-    border: solid #13293D;
+    border: solid black;
     border-radius: 8px 8px 0 0;
     cursor: pointer;
     transition: 0.2s;
@@ -157,7 +157,7 @@ main h1 {
   .form button:hover,
   .form button:focus {
     outline: none;
-    background: #09d;
+    background: var(--cor3);
   }
   footer {
     padding: 10px;
@@ -166,11 +166,12 @@ main h1 {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     color:black;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
 @media(max-width:600px){
     nav a {
         text-align: center;
         display: block;
+        padding: 1px;
     }
 }
 .btn-whatsapp {
@@ -188,16 +189,18 @@ main h1 {
     animation: pulsar 0.8s ease-out 1s infinite alternate none running;
 }
 .voltar{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 30px;
     padding: 5px;
     text-decoration: none;
-    width: 100px;
+    width: 5em;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     font-style: italic;
     font-family: var(--fonte-padrao);
     font-size: 1em;
-    
+}
+.voltar:hover{
+    outline: none;
+    background: var(--cor3);
 }
 a {
     color: inherit;
@@ -214,4 +217,7 @@ a {
 }
 button a {
     color: white;
+}
+img {
+    width: 50px;
 }
