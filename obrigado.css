@@ -4,12 +4,12 @@
     margin: 0px;
 }
 :root {
-    --cor0: #CACACA;
-    --cor1: #878787;
-    --cor2: #00BBC9;
+    --cor0: #22dcf141 ;
+    --cor1: #1aa0ee;
+    --cor2: #247BA0;
     --cor3: #006494;
-    --cor4: #00747C;
-    --cor5: #202022;
+    --cor4: #13293D;
+    --cor5: black;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Arial, bold ;
 }
@@ -22,7 +22,7 @@ body {
     flex-direction: column;
 }
 header {
-    background-image: linear-gradient(to bottom, var(--cor5), var(--cor1));
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
     padding: 10px;
     text-align: center;
    
@@ -77,7 +77,7 @@ footer {
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
     color:black;
     font-family: Arial, Helvetica, sans-serif;
 }

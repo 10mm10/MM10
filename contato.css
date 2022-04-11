@@ -16,12 +16,13 @@
 }
 body {
     margin: auto;
-    background-color: var(--cor0);
+    
 }
 header {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
     padding: 10px;
     text-align: center;
+   
 }
 header > h1 {
     font-style: italic;
@@ -40,7 +41,7 @@ header > p {
 nav { 
     padding: 5px;
     text-align: left;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor0));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor1));
     margin-bottom: 0px;
     border-bottom: 0px;
 }
@@ -81,23 +82,24 @@ main h1 {
     text-shadow: 2px 2px 2px black;
 }
 .form {
-    margin: left;
+    margin: auto;
     max-width: 350px;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    margin-bottom: 90px;
+    background-color: var(--cor1);
     border-radius:0 0 10px 10px;
   }
   
-  .form label,
-  .form input,
-  .form textarea,
-  .form button {
+.form label,
+.form input,
+.form textarea,
+.form button {
     display: block;
     width: 100%;
   }
   
   .form label {
     margin-left: 10px;
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
     margin-bottom: 5px;
     text-shadow: 2px 2px 2px black;
@@ -132,7 +134,7 @@ main h1 {
   .form textarea:hover,
   .form textarea:focus {
     outline: none;
-    border-color: #09d;
+    border-color:black;
     box-shadow: 0 0 0 3px #4dc8ff;
   }
   
@@ -145,7 +147,7 @@ main h1 {
     color: #fff;
     font: inherit;
     text-transform: uppercase;
-    border: solid #13293D;
+    border: solid black;
     border-radius: 8px 8px 0 0;
     cursor: pointer;
     transition: 0.2s;
@@ -158,18 +160,18 @@ main h1 {
     background: var(--cor3);
   }
   footer {
-    height: 150px;
-    padding: 25px;
+    padding: 10px;
     font-size: 0.8em;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
-    color:var(--cor5);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
 @media(max-width:600px){
     nav a {
         text-align: center;
         display: block;
+        padding: 1px;
     }
 }
 .btn-whatsapp {
@@ -192,7 +194,6 @@ main h1 {
     text-decoration: none;
     width: 5em;
     border-radius: 10px;
-    background-color:var(--cor0);
     font-style: italic;
     font-family: var(--fonte-padrao);
     font-size: 1em;
