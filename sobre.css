@@ -53,14 +53,21 @@ nav > a {
     padding: 0.7px;
     font-family: var(--fonte-padrao);
     color:black;
+    font-size: 1.3em;
 }
 nav > a:hover {
-    background-color: var(--cor1);
-    border-radius: 15px;
+    background-color: rgba(66, 220, 247, 0.356);
+    border-radius: 5px;
 }
 nav p {
     font-style: italic;
     text-align: right;
+}
+@media(max-width:600px){
+    nav a {
+        text-align: center;
+        display: block;
+    }
 }
 .conteudo {
     width: 95%;
