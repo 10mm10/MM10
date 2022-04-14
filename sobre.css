@@ -4,9 +4,9 @@
     margin: 0px;
 }
 :root {
-    --cor0: #22dcf141;
+    --cor0: #22dcf141 ;
     --cor1: #1aa0ee;
-    --cor2: #247ba09c;
+    --cor2: #247BA0;
     --cor3: #006494;
     --cor4: #13293D;
     --cor5: black;
@@ -63,7 +63,7 @@ nav p {
     text-align: right;
 }
 .conteudo {
-    width: 75%;
+    width: 95%;
     margin: auto;
     background-color: var(--cor0);
     border-radius: 0 0 10px 10px;
@@ -86,15 +86,40 @@ nav p {
 img{
     width: 50px;
 }
+.btn-whatsapp {
+    position: fixed;
+    
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: #34af23;
+    color: #FFF;
+    font-size: 1.5em;
+    border: 1px solid #f1f1f1;
+    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+a {
+    color: inherit;
+}
+@keyframes pulsar {
+    0% {
+        height: 40px;
+        width: 40px;
+    }
+    100% {
+        height: 50px;
+        width: 50px;
+    }
+}
 footer {
-    flex-shrink: 0;
-    padding: 10px;
-    font-size: 0.8em;
-    text-align: center;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-button a {
-    color: white;
-}
+        flex-shrink: 0;
+        padding: 10px;
+        font-size: 0.8em;
+        text-align: center;
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+        color:black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
