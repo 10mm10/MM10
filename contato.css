@@ -59,6 +59,7 @@ nav > a:hover {
 nav p {
     font-style: italic;
     text-align: right;
+    margin-right: 10px;
 }
 main {
     margin: auto;
