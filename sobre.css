@@ -76,9 +76,11 @@ nav p {
     background-color: var(--cor0);
     border-radius: 0 0 10px 10px;
     flex: 1 0 auto;
-    justify-content: center;
+   
+
 }
 .conteudo h1{
+    display: flex;
     margin-top: 50px;
     padding: 10px;
     font-size: 2em;
@@ -86,7 +88,6 @@ nav p {
     justify-content: center;
 }
 .conteudo p{
-    margin-left: 30px;
     color: black;
     text-align: justify;
     font-family: var(--fonte-padrao);
@@ -95,6 +96,8 @@ nav p {
     margin-top: 10px;
     width: 85%;
     padding: 10px;
+    justify-content: center;
+    margin: auto;
 }
 .voltar{
     margin: 0 0 0 30px;
