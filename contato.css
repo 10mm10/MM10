@@ -53,7 +53,7 @@ nav > a {
     font-size: 1.3em;
 }
 nav > a:hover {
-    background-color: rgba(66, 220, 247, 0.356) ;
+    background-color:  rgba(66, 220, 247, 0.356);
     border-radius: 5px;
 }
 nav p {
