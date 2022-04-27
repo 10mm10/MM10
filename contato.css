@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(https://fonts.googlespis.com/css?famyly=Roboto:400,300,600,400italic);
 * {
     padding: 0px;
     margin: 0px;
@@ -14,9 +13,13 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: Arial, bold ;
 }
-body {
-    margin: auto;
+body, html {
+    height: 100%;
     
+}
+body {
+    display: flex;
+    flex-direction: column;
 }
 header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
@@ -53,7 +56,7 @@ nav > a {
     font-size: 1.3em;
 }
 nav > a:hover {
-    background-color:  rgba(66, 220, 247, 0.356);
+    background-color: rgba(66, 220, 247, 0.356);
     border-radius: 5px;
 }
 nav p {
@@ -61,28 +64,64 @@ nav p {
     text-align: right;
     margin-right: 10px;
 }
-main {
-    margin: auto;
-    min-width: 280px;
-    max-width: 980px;
-    padding: 0 10px 120px 10px;
-    box-shadow:  2px 2px 2px black(0, 0, 0, 0.534);
-    margin-bottom: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+@media(max-width:600px){
+    nav a {
+        text-align: center;
+        display: block;
+    }
 }
-main h1 {
-    padding: 10px;
-    color: white;
-    text-align: center;
+main {
+    width: 95%;
+    margin: auto;
+    background-color: var(--cor0);
+    border-radius: 0 0 10px 10px;
+    flex: 1 0 auto;
+}
+.voltar{
+    margin: 0 0 0 30px;
+    padding: 5px;
+    text-decoration: none;
+    width: 5em;
+    border-radius: 10px;
     font-style: italic;
-    font-size: 3.3em;
     font-family: var(--fonte-padrao);
-    text-shadow: 2px 2px 2px black;
+    font-size: 1em;
+}
+.voltar:hover{
+    outline: none;
+    background: var(--cor3);
+}
+.btn-whatsapp {
+    position: fixed;
+    
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background: #34af23;
+    color: #FFF;
+    font-size: 1.5em;
+    border: 1px solid #f1f1f1;
+    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
+}
+a {
+    color: inherit;
+}
+@keyframes pulsar {
+    0% {
+        height: 40px;
+        width: 40px;
+    }
+    100% {
+        height: 50px;
+        width: 50px;
+    }
 }
 .form {
     margin: auto;
-    max-width: 350px;
+    max-width: 400px;
     margin-bottom: 90px;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
     border-radius:0 0 10px 10px;
@@ -160,64 +199,11 @@ main h1 {
     background: var(--cor4);
   }
   footer {
+    flex-shrink: 0;
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
     color:black;
     font-family: Arial, Helvetica, sans-serif;
-  }
-@media(max-width:600px){
-    nav a {
-        text-align: center;
-        display: block;
-        padding: 1px;
-    }
-}
-.btn-whatsapp {
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    background: #34af23;
-    color: #FFF;
-    font-size: 1.5em;
-    border: 1px solid #f1f1f1;
-    animation: pulsar 0.8s ease-out 1s infinite alternate none running;
-}
-.voltar{
-    margin: 0 0 0 30px;
-    padding: 5px;
-    text-decoration: none;
-    width: 5em;
-    border-radius: 10px;
-    font-style: italic;
-    font-family: var(--fonte-padrao);
-    font-size: 1em;
-}
-.voltar:hover{
-    outline: none;
-    background: var(--cor3);
-}
-a {
-    color: inherit;
-}
-@keyframes pulsar {
-    0% {
-        height: 40px;
-        width: 40px;
-    }
-    100% {
-        height: 50px;
-        width: 50px;
-    }
-}
-button a {
-    color: white;
-}
-img {
-    width: 50px;
 }
